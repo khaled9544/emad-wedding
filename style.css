@@ -1,0 +1,248 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    direction: rtl;
+}
+
+@font-face {
+    font-family: "NotoNastaliqUrdu-B";
+    font-weight: bold;
+    src: url('assets/fonts/NotoNastaliqUrdu-Bold.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: "NotoNastaliqUrdu-R";
+    font-weight: normal;
+    src: url('assets/fonts/NotoNastaliqUrdu-Regular.ttf')  format('truetype');
+}
+
+@font-face {
+    font-family: 'ReemKufi-VariableFont_wght';
+    src: url('assets/fonts/ReemKufi-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cairo';
+    font-weight: 300;
+    src: url('assets/fonts/Cairo-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CormorantGaramond-Light';
+    src: url('assets/fonts/CormorantGaramond-Light.ttf') format('truetype');
+}
+
+#main-container {
+    text-align: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    color: #333333;
+    font-family: 'Cairo', sans-serif;
+}
+
+#banner-image-container {
+    height: 120px;
+    margin-bottom: 200px;
+}
+
+#banner-image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#couple-name {
+    font-family: 'NotoNastaliqUrdu-B';
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#couple-name > div {
+    flex: 1;
+}
+
+#couple-name #female-name {
+    text-align: right;
+}
+
+#couple-name #male-name {
+    text-align: left;
+}
+
+#remaining-message {
+    font-family: 'ReemKufi-VariableFont_wght';
+    font-size: 25px;
+}
+
+#timer {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    flex-direction: row-reverse;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#timer > span {
+    flex: 1;
+    border: 1px solid #7e5f39;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.main-couple-image-wide {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+#date-location {
+    display: flex;
+    max-width: 800px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 40px;
+    margin-bottom: 200px;
+}
+
+#date-location > div {
+    flex: 1;    
+}
+
+#date-location > div:last-child { 
+    padding-right: 60px;
+    text-align: right;
+}
+
+#date-location > div:first-child { 
+    padding-left: 60px;
+    border-left: 1px solid #333333;
+    text-align: left;
+    font-family: 'CormorantGaramond-Light';
+}
+
+#footer-divider {
+    width: 100%;
+    height: 0.5;
+    border-bottom: 1px solid #7e5f39;
+    margin-bottom: 50px;
+}
+
+#mandala-footer {
+    width: 100%;
+}
+
+#footer-note  {
+    font-size: 20px;
+    font-family: 'ReemKufi-VariableFont_wght';
+}
+
+.footer-information {
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-information div:last-child{
+    display: flex;
+    align-items: center;
+}
+.phone-number a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.footer-information img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.gallery-item {
+    width: 200px;
+    padding: 5px;
+  }
+
+
+/* #footer-clarification .phone-number{
+    direction: ltr;
+} */
+
+
+
+
+/* #parents {
+    max-width: 800px;
+    margin: 200px auto;
+    margin-bottom: 100px;
+    padding: 0 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#parents > div {
+    flex: 1;
+}
+
+#invitation-letter {
+    text-align: center;
+    max-width: 800px;
+    margin: 100px auto;
+    margin-top: 0;
+    padding: 0 10px;
+}
+
+#couple-name {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#couple-name > div {
+    flex: 1;
+}
+
+#couple-name #female-name {
+    text-align: right;
+}
+
+#couple-name #male-name {
+    text-align: left;
+}
+
+.main-couple-image-mobile {
+    display: none;
+    width: 100%;
+}
+
+.main-couple-image-wide {
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-couple-image-wide {
+      display: none;
+    }
+    .main-couple-image-mobile {
+        display: block;
+    }
+    #parents {
+        margin-top: 0;
+    }
+  } */
