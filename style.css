@@ -1,19 +1,25 @@
-body, html {
+body,
+html {
     padding: 0;
     margin: 0;
     direction: rtl;
 }
 
 @font-face {
+    font-family: 'MrsSaintDelafield-Regular';
+    src: url('assets/fonts/MrsSaintDelafield-Regular.ttf') format('truetype');
+}
+
+@font-face {
     font-family: "NotoNastaliqUrdu-B";
     font-weight: bold;
-    src: url('assets/fonts/NotoNastaliqUrdu-Bold.ttf')  format('truetype');
+    src: url('assets/fonts/NotoNastaliqUrdu-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "NotoNastaliqUrdu-R";
     font-weight: normal;
-    src: url('assets/fonts/NotoNastaliqUrdu-Regular.ttf')  format('truetype');
+    src: url('assets/fonts/NotoNastaliqUrdu-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -40,6 +46,13 @@ body, html {
     font-family: 'Cairo', sans-serif;
 }
 
+#mobile-header {
+    display: none;
+    height: 55px;
+    font-size: 45px;
+    font-family: 'MrsSaintDelafield-Regular';
+}
+
 #banner-image-container {
     height: 120px;
     margin-bottom: 200px;
@@ -62,7 +75,7 @@ body, html {
     margin-bottom: 15px;
 }
 
-#couple-name > div {
+#couple-name>div {
     flex: 1;
 }
 
@@ -92,7 +105,7 @@ body, html {
     font-size: 20px;
 }
 
-#timer > span {
+#timer>span {
     flex: 1;
     border: 1px solid #7e5f39;
     margin: 10px;
@@ -114,20 +127,28 @@ body, html {
     margin-bottom: 200px;
 }
 
-#date-location > div {
-    flex: 1;    
+#date-location>div {
+    flex: 1;
 }
 
-#date-location > div:last-child { 
+#date-location>div:last-child {
     padding-right: 60px;
     text-align: right;
 }
 
-#date-location > div:first-child { 
+#date-location>div:first-child {
     padding-left: 60px;
     border-left: 1px solid #333333;
     text-align: left;
     font-family: 'CormorantGaramond-Light';
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main-couple-image-mobile {
+    display: none;
+    width: 100%;
 }
 
 #footer-divider {
@@ -141,7 +162,7 @@ body, html {
     width: 100%;
 }
 
-#footer-note  {
+#footer-note {
     font-size: 20px;
     font-family: 'ReemKufi-VariableFont_wght';
 }
@@ -154,10 +175,11 @@ body, html {
     flex-direction: column;
 }
 
-.footer-information div:last-child{
+.footer-information div:last-child {
     display: flex;
     align-items: center;
 }
+
 .phone-number a {
     text-decoration: none;
     color: #333333;
@@ -168,10 +190,78 @@ body, html {
     margin-left: 10px;
 }
 
-.gallery-item {
-    width: 200px;
-    padding: 5px;
-  }
+
+footer {
+    padding: 0 10px;
+}
+
+footer .footer-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+footer .footer-container .google-map img {
+    width: 300px;
+}
+
+footer .invitation-letter {
+    font-size: 20px;
+    font-family: 'ReemKufi-VariableFont_wght';
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    #mobile-header {
+        display: block;
+    }
+    #banner-image-container {
+        margin-bottom: 0px;
+    }
+    #footer-divider { 
+        width: 90%;
+        margin: 50px auto;
+        margin-top: 0;
+    }
+    #couple-name {
+        font-size: 50px;
+    }
+    #date-location {
+        flex-direction: column-reverse;
+    }
+    #date-location>div:last-child {
+        padding-right: 0;
+        padding-bottom: 50px;
+        border-bottom: 1px solid #333333;
+    }
+    #date-location>div:first-child {
+        padding: 0;
+        border: none;
+        align-items: center;
+        text-align: center;
+        padding-top: 50px;
+    }
+    .main-couple-image-wide {
+        display: none;
+    }
+
+    .main-couple-image-mobile {
+        display: block;
+    }
+
+    #parents {
+        margin-top: 0;
+    }
+    footer .footer-container {
+        flex-direction: column-reverse;
+    }
+    .google-map img {
+        text-align: center;
+    }
+}
 
 
 /* #footer-clarification .phone-number{
@@ -226,10 +316,7 @@ body, html {
     text-align: left;
 }
 
-.main-couple-image-mobile {
-    display: none;
-    width: 100%;
-}
+
 
 .main-couple-image-wide {
     width: 100%;
