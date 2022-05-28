@@ -270,6 +270,9 @@ footer .invitation-letter {
     #parents {
         margin-top: 0;
     }
+    #date-location {
+        margin-bottom: 50px;
+    }
     footer .footer-container {
         flex-direction: column-reverse;
     }
