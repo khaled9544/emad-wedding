@@ -175,10 +175,24 @@ html {
     flex-direction: column;
 }
 
-.footer-information div:last-child {
+.footer-information .parents {
+    font-size: 20px;
+    text-align: right;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
+
+.footer-clarification {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+/* 
+.footer-clarification .parents {
+    display: flex;
+    align-items: center;
+} */
 
 .phone-number a {
     text-decoration: none;
@@ -195,6 +209,12 @@ footer {
     padding: 0 10px;
 }
 
+footer .apologize {
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
 footer .footer-container {
     display: flex;
     flex-direction: row-reverse;
@@ -204,6 +224,7 @@ footer .footer-container {
 
 footer .footer-container .google-map img {
     width: 300px;
+    margin-right: 10px;
 }
 
 footer .invitation-letter {
@@ -230,19 +251,13 @@ footer .invitation-letter {
         font-size: 50px;
     }
     #date-location {
-        flex-direction: column-reverse;
+        font-size: 30px;
     }
     #date-location>div:last-child {
-        padding-right: 0;
-        padding-bottom: 50px;
-        border-bottom: 1px solid #333333;
+        padding-right: 40px;
     }
     #date-location>div:first-child {
-        padding: 0;
-        border: none;
-        align-items: center;
-        text-align: center;
-        padding-top: 50px;
+        padding-left: 40px;
     }
     .main-couple-image-wide {
         display: none;
@@ -260,6 +275,11 @@ footer .invitation-letter {
     }
     .google-map img {
         text-align: center;
+        margin: 0;
+    }
+
+    #timer {
+        margin-bottom: 50px;
     }
 }
 
