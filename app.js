@@ -43,4 +43,26 @@ var x = setInterval(function() {
 }, 1000);
 
 
-document.getElementById("wedding-date").innerHTML = `${getArabicNumbers(29)} يوليو <br>,${getArabicNumbers(2022)}`
+document.getElementById("wedding-date").innerHTML = `${getArabicNumbers(29)} يوليو <br>,${getArabicNumbers(2022)}`;
+
+
+function getUrlVars()
+{
+  // console.log("hello")
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+
+var person = getUrlVars()["any"];
+if(person) {
+  document.getElementById("number-of-invitees").innerHTML = `${getArabicNumbers(parseInt(person[3]))}`;
+} else {
+  document.getElementById("number-of-invitees").innerHTML = `${getArabicNumbers(6)}`;
+}
