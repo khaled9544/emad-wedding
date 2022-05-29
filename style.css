@@ -142,6 +142,12 @@ html {
     margin-bottom: 200px;
 }
 
+.wedding-time {
+    font-size: 25px;
+    font-family: 'ReemKufi-VariableFont_wght';
+    margin-bottom: 200px;
+}
+
 #date-location>div {
     flex: 1;
 }
@@ -320,7 +326,11 @@ footer .invitation-letter {
     }
     .fotorama {
         display: block;
-    } 
+    }
+
+    .wedding-time {
+        margin-bottom: 50px;
+    }
 
     .gallery-title {
         display: block;
