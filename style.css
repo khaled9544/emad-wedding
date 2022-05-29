@@ -222,6 +222,10 @@ footer .footer-container {
     margin-bottom: 30px;
 }
 
+footer .footer-container .google-map {
+    margin-top: 30px;
+}
+
 footer .footer-container .google-map img {
     width: 300px;
     margin-right: 10px;

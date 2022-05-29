@@ -41,3 +41,6 @@ var x = setInterval(function() {
     document.getElementById("timer").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+document.getElementById("wedding-date").innerHTML = `${getArabicNumbers(29)} يوليو <br>,${getArabicNumbers(2022)}`
