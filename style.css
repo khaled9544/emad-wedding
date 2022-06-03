@@ -40,10 +40,24 @@ html {
 
 #main-container {
     text-align: center;
+    display: none;
     max-width: 1440px;
     margin: 0 auto;
     color: #333333;
     font-family: 'Cairo', sans-serif;
+}
+
+#splash-screen {
+    height: 100vh;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#splash-screen img {
+    width: 350px;
+    width: 100%;
 }
 
 #mobile-header {

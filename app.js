@@ -66,3 +66,11 @@ if(person) {
 } else {
   document.getElementById("number-of-invitees").innerHTML = `${getArabicNumbers(6)}`;
 }
+
+this.interval = setInterval(() => {
+  if(document.readyState === 'complete') {
+    document.getElementById('main-container').style.display = 'block';
+    document.getElementById('splash-screen').style.display = 'none';
+    clearInterval(this.interval);
+  }
+}, 2000);
