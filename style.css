@@ -40,7 +40,6 @@ html {
 
 #main-container {
     text-align: center;
-    display: none;
     max-width: 1440px;
     margin: 0 auto;
     color: #333333;
@@ -50,6 +49,12 @@ html {
 #splash-screen {
     height: 100vh;
     background-color: #f8f8f8;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
