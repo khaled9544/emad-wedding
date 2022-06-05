@@ -71,7 +71,7 @@ $(document).ready(function () {
         document.getElementById('splash-screen').style.display = 'none';
         clearInterval(this.interval);
       }
-    }, 100);
+    }, 2000);
 
     // document.onreadystatechange = () => {
     //   console.log(document.readyState);
