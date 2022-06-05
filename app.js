@@ -65,19 +65,25 @@ $(document).ready(function () {
       document.getElementById("number-of-invitees").innerHTML = `${getArabicNumbers(6)}`;
     }
 
-    // this.interval = setInterval(() => {
-    //   if(document.readyState === 'complete') {
-    //     // document.getElementById('main-container').style.display = 'block';
-    //     document.getElementById('splash-screen').style.display = 'none';
-    //     clearInterval(this.interval);
-    //   }
-    // }, 2000);
+    this.interval = setInterval(() => {
+      console.log(document.readyState);
+      if(document.readyState === 'complete') {
+        document.getElementById('splash-screen').style.display = 'none';
+        clearInterval(this.interval);
+      }
+    }, 100);
 
+    // document.onreadystatechange = () => {
+    //   console.log(document.readyState);
+    //   if (document.readyState === 'complete') {
+    //     document.getElementById('splash-screen').style.display = 'none';
+    //   }
+    // }
 
     // Handler for .ready() called.
-    document.getElementById('splash-screen').style.display = 'none';
-  } else {
-    document.getElementById('splash-screen').style.display = 'flex';
-  }
+    //   document.getElementById('splash-screen').style.display = 'none';
+    // } else {
+    //   document.getElementById('splash-screen').style.display = 'flex';
+    }
 
-});
+  });
