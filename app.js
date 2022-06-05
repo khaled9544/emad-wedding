@@ -68,7 +68,7 @@ $(document).ready(function () {
     this.interval = setInterval(() => {
       console.log(document.readyState);
       if(document.readyState === 'complete') {
-        // document.getElementById('splash-screen').style.display = 'none';
+        document.getElementById('splash-screen').style.display = 'none';
         clearInterval(this.interval);
       }
     }, 100);
